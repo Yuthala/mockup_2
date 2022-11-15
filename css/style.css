@@ -5,6 +5,7 @@ header {
     position: relative;
 }
 nav {
+    position: fixed;
     height: 53px;
     background: #212121;
     color: #FFFFFF;
@@ -29,7 +30,6 @@ nav {
     position: absolute;
     height: 84px;
     background-color: rgba(0, 0, 0, .6);
-    position:absolute;
     width: 100%;
 }
 .subheader .subheader_logo {
@@ -126,7 +126,7 @@ nav {
 
 .reasons {
     min-height: 767px;
-    margin: 18px 43px 0 33px;
+    margin: 18px 43px 64px 33px;
 }
 .reasons label {
     display: block;
@@ -151,9 +151,6 @@ nav {
     text-align: center;
     margin-top: 33px;
 }
-.reasons .row {
-    margin-top: 16px;
-}
 .reasons .reasons_round {
     display: flex;
     justify-content: center;
@@ -165,9 +162,20 @@ nav {
 }
 .reasons .col-md-6 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-top: 30px;
 }
 .reasons .reasons_text {
     width: 371px;
     padding-left: 25px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color:  #202020;
+}
+.reasons .reasons_blue {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
 }
