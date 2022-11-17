@@ -1,5 +1,5 @@
 $tint-color: #1EACC7
-
+$tint_light: #1FBAD6
 $contrast-color: #FF5656
 
 @mixin button 
@@ -30,12 +30,15 @@ $contrast-color: #FF5656
 	&:hover
 		background-image: none
 		background-color: $tint-color
+
+
 *
 	font-family: 'Roboto', sans-serif
 
 a
 	&:hover
 		text-decoration: none
+		cursor: pointer
 
 header
 	position: relative
@@ -401,17 +404,80 @@ nav
 		font-weight: 400
 		font-size: 15px
 		text-transform: uppercase
-		color: #1FBAD6
+		color: $tint_light
 		cursor: pointer
 		text-decoration: none
 		&:hover
 			color: #fff
 
+footer
+	a  
+		text-decoration: none
+		color: #999999
+	
 .footer
 	min-height: 155px
 	padding: 12px 22px 38px
 	&_divider
 		width: 301px
 		height: 7px
-		background: #1FBAD6
+		background: $tint_light
 		margin: 0 auto
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		margin-top: 32px
+	&_wrapper > div
+		width: 33%
+		&:last-child
+			display: flex 
+			justify-content: flex-end
+	&_social
+		display: flex
+		justify-content: flex-start
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 35px
+			height: 35px
+			border-radius: 100%
+			background: #070716
+			margin-left: 6px
+			i
+				color: #fff
+	&_links
+		margin: 0 auto
+		&_main
+			display: flex
+			justify-content: space-between
+			font-weight: 300
+			font-size: 15px
+			text-transform: uppercase
+			&_line
+				color: #070716
+		&_sub
+			display: flex
+			justify-content: space-between
+			font-weight: 300
+			font-size: 11px
+			text-transform: uppercase
+			color: #999999
+			margin: 18px 0
+		&_lang
+			display: block
+			font-weight: 400
+			font-size: 11px
+			text-transform: uppercase
+			text-align: center
+			&_rus
+				color: $tint_light
+	&_app
+		display: flex
+		justify-content: flex-end
+		&_item
+			margin-left: 6px
+
+
+
