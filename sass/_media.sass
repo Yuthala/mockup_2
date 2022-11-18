@@ -1,17 +1,56 @@
 @media (max-width: 1200px)
 	.menu
+		font-size: 13px
 		&_item
 			padding-right: 20px
-		&_link
-			font-size: 13px
+			line-height: 16px
 	.promo
 		&_header
 			font-size: 50px
+		&_subheader
+			font-size: 32px
 	.reasons
 		&_block
 			align-items: flex-start
 		&_descr
+			width: 320px
+		&_round
+			margin-right: 5px
+			width: 90px
+			height: 90px
+		&_text
+			padding-left: 10px
+			width: 350px
+	.mobile
+		min-height: 760px
+		padding: 40px 0
+		&_item
 			width: 300px
+	.choice
+		min-height: 850px
+		&_descr
+			bottom: 85px
+	.title_white
+		font-size: 32px
+	.subtitle_white
+		font-size: 14px
+	.world
+		min-height: 650px
+	.footer
+		&_divider
+			width: 180px
+			height: 3px
+		&_links
+			&_main
+				font-size: 12px
+			&_sub
+				font-size: 9px
+			&_lang
+				font-size: 9px
+		&_app
+			justify-content: flex-end
+			&_item > img
+				width: 70px
 
 @media (max-width: 991px)
 	.title
@@ -40,10 +79,12 @@
 			font-size: 30px
 	.reasons
 		&_block
+			display: flex
 			flex-direction: column
 			align-items: center
 		&_round
 			margin-right: 0
+			margin-bottom: 25px
 		&_descr
 			width: 300px
 			margin-top: 20px
@@ -111,9 +152,13 @@
 		&_btn
 			display: block
 			margin-top: 10px
-			width: 200px
-			height: 40px
+			width: 180px
+			height: 30px
 			margin: 0 auto
+			font-weight: 400
+			font-size: 12px
+			line-height: 30px
+			margin-top: 20px
 	.promo
 		&_header
 			line-height: 45px
