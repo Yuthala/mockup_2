@@ -56,10 +56,10 @@
 	.title
 		font-size: 28px
 	.menu
+		padding: 13px 0
+		font-size: 12px
 		&_item
-			padding-right: 8px
-		&_link
-			font-size: 10px
+			padding-right: 12px
 	.subheader
 		&_logo
 			img
@@ -73,11 +73,17 @@
 			margin-top: 21px
 			width: 100%
 	.promo
+		min-height: 730px
+		padding-bottom: 80px
 		&_header
-			font-size: 40px
+			font-size: 36px
 		&_subheader
-			font-size: 30px
+			font-size: 28px
+		&_btn
+			margin-top: 90px
 	.reasons
+		&_text
+			width: 320px
 		&_block
 			display: flex
 			flex-direction: column
@@ -88,6 +94,45 @@
 		&_descr
 			width: 300px
 			margin-top: 20px
+	.mobile
+		min-height: 730px
+		padding: 30px 0
+		&_item
+			width: 230px
+			height: 230px
+			padding-top: 52px
+			&_subtitle
+				font-weight: 300
+				font-size: 18px
+				line-height: 24px
+	.subtitle
+			font-size: 14px
+			margin-top: 0
+	.title_white
+		margin-top: 0
+	.subtitle_white
+		font-size: 12px
+	.world
+		min-height: 600px
+	.footer
+		min-height: 220px
+		&_wrapper
+			flex-direction: column
+		&_wrapper > div
+			width: 50%
+			margin: 0 auto
+			&:first-child
+				display: flex
+				justify-content: center
+			&:nth-child(2)
+				margin: 20px auto
+		&_app
+			justify-content: space-between
+			margin: 0 auto
+		&_links
+			margin: 10px auto
+			&_sub
+				margin: 9px 0
 
 @media (max-width: 767px)
 	.title
