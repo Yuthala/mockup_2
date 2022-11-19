@@ -28,8 +28,6 @@
 			width: 300px
 	.choice
 		min-height: 850px
-		&_descr
-			bottom: 85px
 	.title_white
 		font-size: 32px
 	.subtitle_white
@@ -42,11 +40,11 @@
 			height: 3px
 		&_links
 			&_main
-				font-size: 12px
+				font-size: 14px
 			&_sub
-				font-size: 9px
+				font-size: 11px
 			&_lang
-				font-size: 9px
+				font-size:11px
 		&_app
 			justify-content: flex-end
 			&_item > img
@@ -98,18 +96,22 @@
 		min-height: 730px
 		padding: 30px 0
 		&_item
-			width: 230px
-			height: 230px
+			width: 290px
+			height: 290px
 			padding-top: 52px
 			&_subtitle
 				font-weight: 300
 				font-size: 18px
 				line-height: 24px
+	.choice
+		&_img
+			width: 100%
+	.title
+		&_white
+			margin-top: 26px
 	.subtitle
 			font-size: 14px
 			margin-top: 0
-	.title_white
-		margin-top: 0
 	.subtitle_white
 		font-size: 12px
 	.world
@@ -131,12 +133,11 @@
 			margin: 0 auto
 		&_links
 			margin: 10px auto
+			width: 100%
 			&_sub
 				margin: 9px 0
 
 @media (max-width: 767px)
-	.title
-		margin-top: 25px
 	.menu
 		position: fixed
 		flex-direction: column
@@ -207,16 +208,42 @@
 	.promo
 		&_header
 			line-height: 45px
+			font-size: 32px
+		&_subheader
+			font-size: 22px
+		&_descr
+			font-size: 16px
+	.title
+		font-size: 24px
+	.title_white
+		margin-top: 28px
+
+	.choice
+		min-height: 650px
+		padding: 28px 0 70px
+		&_black
+			min-height: 370px
+		&_img
+	.require
+		padding: 38px 0 44px 0
+		&_block
+			margin: 20px 0
+	.world
+		min-height: 440px
 
 @media (max-width: 575px)
 	nav
 		height: 30px 
 	header
 		height: 30px
+	.hidden-320
+		display: none
 	.title 
 		font-size: 16px
-		margin-top: 15px
+		margin-top: 18px
 		line-height: 16px
+	.title_white
+		margin-top: 22px
 	.subtitle 
 		font-size: 14px
 		line-height: 21px
@@ -229,15 +256,16 @@
 		&_logo
 			margin-top: 16px
 		&_phone
-			font-style: 12px
+			font-size: 12px
 			font-weight: 400
 			text-transform: uppercase
 			margin-top: 11px
 		&_btn
 			width: 110px
 			height: 22px
-			font-style: 10px
+			font-size: 10px
 			margin-top: 6px
+			line-height: 18px
 			&:hover
 				background-image: linear-gradient(to top, $tint-color 0%, #4ce2ff 100%)
 	.promo
@@ -246,17 +274,17 @@
 		&_descr
 			display: none
 		&_header
-			font-style: 30px
+			font-size: 30px
 			padding: 0 24px
 			line-height: 35px
 		&_subheader
-			font-style: 20px
+			font-size: 20px
 			margin-top: 33px
 			padding: 0 10px
 			line-height: 30px
 		&_btn
 			width: 210px
-			heigth: 50px
+			height: 50px
 			margin-top: 72px
 			font-size: 16px
 			&:hover
@@ -277,7 +305,8 @@
 				&:nth-child(3)
 					transform: translateY(5px) rotate(45deg)
 	.reasons
-		padding: 22px 0 36px 0
+		padding: 22px 17px 36px
+		margin: 0
 		&_block
 			margin-top: 26px
 		&_round
@@ -288,5 +317,54 @@
 			margin-top: 27px
 		&_subtitle
 			font-style: 16px
+	.mobile
+		padding: 25px 16px 43px
+		.row
+			margin-top: 27px
+		&_item
+			width: 270px
+			&_subtitle
+				width: 80%
+				margin: 0 auto
+	.choice
+		min-height: 322px
+		background: none
+		padding: 27px 0 31px
+		&_descr
+			position: relative
+			z-index: 3
+			margin-top: 16px
+			color: #ffffff
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+		&_img
+			margin: 36px auto 0 auto
+		&_black
+			min-height: 400px
+	.world
+		min-height: 360px
+		&_link
+			width: 200px
+			display: block
+			bottom: 30px
+	.footer
+		&_wrapper > div
+			width: 100%
+			margin: 0 auto
+			&:first-child
+				order: 2
+			&:nth-child(2)
+				order: 1
+		&_divider
+			width: 253px
+		&_links
+			&_sub
+				flex-wrap: wrap
+				justify-content: center
+			&_sub > a
+					padding-right: 16px
+	
+
 	
 
